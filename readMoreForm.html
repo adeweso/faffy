@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up Form</title>
+  <style>
+    body {
+      background-image: url('business_background.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: black;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h2 {
+      text-align: left;
+      color: black;
+      font-size: 50px;
+      margin-bottom: 20px;
+      margin-top: 0;
+    }
+
+    .form-container {
+      background-color: red;
+      color: black;
+      padding: 20px;
+      border-radius: 5px;
+      width: 350px;
+    }
+
+    label {
+      display: block;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="date"],
+    input[type="password"] {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid black;
+      border-radius: 3px;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #333333;
+    }
+  </style>
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      // Perform any necessary form validation or data processing here
+
+      // Display confirmation message
+      alert('Your information has been submitted.');
+
+      // Redirect to home page (replace "index.html" with the actual home page URL)
+      window.location.href = 'index.html';
+    }
+  </script>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Sign Up</h2>
+
+    <form action="/submit_form" method="post" onsubmit="handleSubmit(event)">
+
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="email@gmail.com" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <label for="confirm_password">Confirm Password:</label>
+      <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required>
+
+      <input type="submit" value="Sign Up">
+
+    </form>
+  </div>
+
+</body>
+</html>

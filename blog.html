@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CSC 227 Course</title>
+    <style>
+        body{
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+}
+#main-navbar{
+    display: flex;
+    width: 100%;
+    background: black;
+    padding-inline: 8px;
+    justify-content: space-between;
+    color: white;
+    padding-bottom:20px ;
+}
+#main-navbar > div > h2{
+    color: white;
+    margin: 8px 12px 8px 12px;
+    font-size: 2.2em;
+}
+#main-navbar > div > h2>span{
+    color: orangered;
+}
+#main-navbar > div > p{
+    color: white;
+    margin: 5px 10px;
+}
+#main-navbar>ul{
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin-right: 40px;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+a:hover{
+    color: red;
+}
+#cover-img{
+    width: 90%;
+    height: 250px;
+    margin: 30px 5%;
+}
+#articles{
+    display: flex;
+    width: 90%;
+    margin-inline: 5%;
+}
+#articles h2{
+    color: rgb(37, 37, 37);
+}
+#side-bar-menu{
+    background: white;
+    padding: 30px;
+}
+#search-bar{
+    padding: 5px;
+}
+#side-bar-menu a{
+    color: black;
+}
+#side-bar-menu > ul > li{
+    margin-block: 5px;
+    list-style-type:square;
+}
+#template-licence{
+    padding: 20px;
+}
+#t-licence-body{
+    display: flex;
+}
+#t-licence-body > img{
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+}
+#t-licence-body p{
+    padding: 10px;
+}
+#t-licence-body div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#read-more{
+    background-color: orangered;
+    border: none;
+    padding: 8px;
+    font-weight: 600;
+    width: 100px;
+    align-self: flex-end;
+}
+#read-more:hover{
+    color: white;
+}
+.danny {
+border-right: 5px groove black;
+padding: 10px;
+text-decoration: none;
+color: white;
+}
+header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .post {
+      margin-bottom: 20px;
+    }
+
+    .post h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .post p {
+      margin: 10px 0;
+    }
+  </style>
+
+    </style>
+</head>
+<body>
+    <nav id="main-navbar">
+        <div>
+            <h2>CSC 227 <span>Course</span></h2>
+            <p>By Fafiolu Oluwadamilola</p>
+        </div>
+        <ul>
+            <li><a href="index.html" class="danny">Home</a></li>
+            <li><a href="supportus.html" class="danny">Support</a></li>
+            <li><a href="aboutus.html" class="danny">About Us</a></li>
+            <li><a href="blog.html" class="danny">Blog</a></li>
+            <li><a href="contactus.html" class="danny">Contact Us</a></li>
+        </ul>
+    </nav>
+    <img id="cover-img" src="miami.jpg" alt="cover-img">
+    <section id="articles">
+        <section id="side-bar-menu">
+            <input type="search" name="" id="search-bar" placeholder="Search">
+            <h2>Sidebar Menu</h2>
+            <ul>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="#">TemplateInfo</a></p>
+                <p><a href="#">Style Demo</a></p>
+                <p><a href="blog.html">Blog</a></p>
+                <p><a href="#">Archives</a></p>
+            </ul>
+        </section>
+        <main>
+            <div class="post">
+              <h2>Post Title 1</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dui enim. Vivamus eget posuere nisl. Fusce tincidunt orci lectus, in gravida sem interdum a. Integer in leo lacinia, varius metus eget, efficitur mauris.</p>
+            </div>
+        
+            <div class="post">
+              <h2>Post Title 2</h2>
+              <p>Etiam et dolor libero. Aliquam vulputate tincidunt nulla, eu gravida elit ullamcorper in. In hac habitasse platea dictumst. Sed eu lobortis orci.</p>
+            </div>
+        
+            <div class="post">
+              <h2>Post Title 3</h2>
+              <p>Mauris pulvinar justo quis lacus aliquet, id volutpat sapien rutrum. Ut semper diam vel sagittis venenatis. Quisque aliquet ultrices nisl, et commodo nunc cursus vitae.</p>
+            </div>
+          </main>
+
+                    <button id="read-more"><a href=readMoreForm.html>Read More</a></button>
+                </div>
+                
+            </div>
+        </section>
+    </section>
+</body>
+</html>
